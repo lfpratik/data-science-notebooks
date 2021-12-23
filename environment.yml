@@ -1,0 +1,21 @@
+name: data-science-notebooks
+channels:
+- conda-forge
+dependencies:
+- python=3.9
+- nb_conda_kernels
+- flake8
+- pytest
+- pytest-cov
+- ipykernel
+- pipdeptree
+# Some packages you're likly going to need
+- numpy
+- pandas
+- scipy
+- scikit-learn
+- matplotlib
+- seaborn
+# Include pip based packages
+- pip:
+  - -e .
